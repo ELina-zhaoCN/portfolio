@@ -93,7 +93,7 @@
             <div class="flex-1 space-y-6">
                 <div>
                     <p class="text-base text-muted mb-2">Hey there,</p>
-                    <h1 class="font-heading text-5xl lg:text-6xl font-bold tracking-tight leading-tight">I'm Rulian Zhao</h1>
+                    <h1 class="font-heading text-5xl lg:text-6xl font-bold tracking-tight leading-tight">I'm Rulian</h1>
                 </div>
                 <p class="text-xl lg:text-2xl font-medium text-gray-900 leading-relaxed">
                     Senior Product Manager with 9 years of experience in B2B, Smart City, and AI-powered enterprise applications.
@@ -162,105 +162,161 @@
     <section class="py-24 " id="side-projects">
         <h2 class="font-heading text-3xl lg:text-4xl font-bold mb-16">Side Projects</h2>
 
-        <!-- Video row -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-0">
-            <div class="bg-white rounded-t-2xl border border-b-0 border-border overflow-hidden">
-                <div class="aspect-[4/3] bg-gray-100">
-                    <iframe src="https://drive.google.com/file/d/1GuBqE6Z6_PNtKEW00N_jSU_N34iidr9V/preview" class="w-full h-full" allow="autoplay" allowfullscreen></iframe>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <button type="button" onclick="openSideProject(0)" class="text-left bg-white rounded-2xl border border-border overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all">
+                <div class="aspect-video bg-gray-100">
+                    <img src="assets/side-projects/cover-1.jpg" alt="Lipstick Picker Robot" class="w-full h-full object-cover">
                 </div>
-            </div>
-            <div class="bg-white rounded-t-2xl border border-b-0 border-border overflow-hidden">
-                <div class="aspect-[4/3] bg-gray-100">
-                    <iframe src="https://drive.google.com/file/d/17VK6h6zGJyPVQOQVXTxljwhWCBn5518k/preview" class="w-full h-full" allow="autoplay" allowfullscreen></iframe>
+                <div class="px-5 py-4">
+                    <h3 class="font-heading text-base font-semibold text-gray-900">Lipstick Picker Robot</h3>
+                    <p class="text-xs text-muted leading-relaxed mt-1">Bi-manual grasping via imitation learning — ACT policy + YOLO visual attention.</p>
                 </div>
-            </div>
-            <div class="bg-white rounded-t-2xl border border-b-0 border-border overflow-hidden">
-                <div class="aspect-[4/3] bg-gray-100">
-                    <iframe src="https://drive.google.com/file/d/1RVw7VjSKvhXwfiYkA_NvQV9VgK1YLgD2/preview" class="w-full h-full" allow="autoplay" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
+            </button>
 
-        <!-- Title row -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-0">
-            <div class="bg-white border-x border-border px-5 pt-5 pb-3">
-                <h3 class="font-heading text-base font-semibold text-gray-900">Hands-Free AI Glasses</h3>
-            </div>
-            <div class="bg-white border-x border-border px-5 pt-5 pb-3">
-                <h3 class="font-heading text-base font-semibold text-gray-900">Neuro-Symbolic Cognitive Architecture</h3>
-            </div>
-            <div class="bg-white border-x border-border px-5 pt-5 pb-3">
-                <h3 class="font-heading text-base font-semibold text-gray-900">AI Integration for Rhythm Game Beat Map Generation</h3>
-            </div>
-        </div>
+            <button type="button" onclick="openSideProject(1)" class="text-left bg-white rounded-2xl border border-border overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all">
+                <div class="aspect-video bg-gray-100">
+                    <img src="assets/side-projects/cover-2.jpg" alt="Restaurant Delivery Robot" class="w-full h-full object-cover">
+                </div>
+                <div class="px-5 py-4">
+                    <h3 class="font-heading text-base font-semibold text-gray-900">Restaurant Delivery Robot</h3>
+                    <p class="text-xs text-muted leading-relaxed mt-1">Autonomous navigation with real-time person detection — ROS 2, Nav2, SLAM, YOLOv8.</p>
+                </div>
+            </button>
 
-        <!-- Description row -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-0">
-            <div class="bg-white border-x border-border px-5 py-3">
-                <p class="text-xs text-muted leading-relaxed">The first eyewear device targeting clinical-grade diagnostics through the eye.</p>
-            </div>
-            <div class="bg-white border-x border-border px-5 py-3">
-                <p class="text-xs text-muted leading-relaxed">Concept grounding through sensorimotor exploration. No labeled data, no preset rules.</p>
-            </div>
-            <div class="bg-white border-x border-border px-5 py-3">
-                <p class="text-xs text-muted leading-relaxed">Transforms ambient and experimental music into rhythm-game-ready audio.</p>
-            </div>
-        </div>
+            <button type="button" onclick="openSideProject(2)" class="text-left bg-white rounded-2xl border border-border overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all">
+                <div class="aspect-video bg-gray-100">
+                    <img src="assets/side-projects/cover-3.jpg" alt="Jera" class="w-full h-full object-cover">
+                </div>
+                <div class="px-5 py-4">
+                    <h3 class="font-heading text-base font-semibold text-gray-900">Jera</h3>
+                    <p class="text-xs text-muted leading-relaxed mt-1">An AI companion for teens — always-on emotional support, a familiar voice, and a safety net for parents and clinicians.</p>
+                </div>
+            </button>
 
-        <!-- Metrics row -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-0">
-            <div class="bg-white border-x border-border px-5 py-3">
-                <div class="space-y-1 text-xs font-semibold text-gray-600">
-                    <p>Diabetic Retinopathy Screening</p>
-                    <p>Seizure Detection</p>
-                    <p>Early Markers for Cognitive Decline</p>
+            <button type="button" onclick="openSideProject(3)" class="text-left bg-white rounded-2xl border border-border overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all">
+                <div class="aspect-video bg-gray-100">
+                    <img src="assets/side-projects/cover-4.png" alt="Personal Portfolio" class="w-full h-full object-cover">
                 </div>
-            </div>
-            <div class="bg-white border-x border-border px-5 py-3">
-                <div class="space-y-1 text-xs font-semibold text-gray-600">
-                    <p>Accuracy: +7.2%</p>
-                    <p>Modular architecture: 5-layer</p>
-                    <p>Manual annotations: 0</p>
+                <div class="px-5 py-4">
+                    <h3 class="font-heading text-base font-semibold text-gray-900">Personal Portfolio</h3>
+                    <p class="text-xs text-muted leading-relaxed mt-1">River sewage management, a social fitness app, clothing upcycling, and secondhand beauty devices.</p>
                 </div>
-            </div>
-            <div class="bg-white border-x border-border px-5 py-3">
-                <div class="space-y-1 text-xs font-semibold text-gray-600">
-                    <p>Beat regularity: 0.35 to 0.96</p>
-                    <p>Reconstruction MSE: 0.0246</p>
-                </div>
-            </div>
+            </button>
         </div>
-
-        <!-- Tags row -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white rounded-b-2xl border border-t-0 border-border px-5 pt-3 pb-5">
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 bg-blue-50 rounded-lg text-xs text-blue-500 border border-blue-100">Multi-Modal Sensing</span>
-                    <span class="px-3 py-1 bg-blue-50 rounded-lg text-xs text-blue-500 border border-blue-100">Wearable AI</span>
-                    <span class="px-3 py-1 bg-blue-50 rounded-lg text-xs text-blue-500 border border-blue-100">Clinical Diagnostics</span>
-                </div>
-            </div>
-            <div class="bg-white rounded-b-2xl border border-t-0 border-border px-5 pt-3 pb-5">
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 bg-blue-50 rounded-lg text-xs text-blue-500 border border-blue-100">Low-Resource AI</span>
-                    <span class="px-3 py-1 bg-blue-50 rounded-lg text-xs text-blue-500 border border-blue-100">Multi-Modal</span>
-                    <span class="px-3 py-1 bg-blue-50 rounded-lg text-xs text-blue-500 border border-blue-100">Continual Learning</span>
-                </div>
-            </div>
-            <div class="bg-white rounded-b-2xl border border-t-0 border-border px-5 pt-3 pb-5">
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 bg-blue-50 rounded-lg text-xs text-blue-500 border border-blue-100">Music AI</span>
-                    <span class="px-3 py-1 bg-blue-50 rounded-lg text-xs text-blue-500 border border-blue-100">Signal Processing</span>
-                    <span class="px-3 py-1 bg-blue-50 rounded-lg text-xs text-blue-500 border border-blue-100">Generative Model</span>
-                </div>
-            </div>
-        </div>
-
     </section>
+
+    <!-- Side Project Modal -->
+    <div id="side-project-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/60" onclick="if(event.target===this) closeSideProject()">
+        <div class="bg-white rounded-2xl w-full max-w-6xl h-[92vh] flex flex-col overflow-hidden">
+            <div class="flex items-center justify-between px-6 py-4">
+                <h3 id="side-project-title" class="font-heading text-lg font-semibold text-gray-900"></h3>
+                <button type="button" onclick="closeSideProject()" class="text-muted hover:text-gray-900 text-2xl leading-none">&times;</button>
+            </div>
+            <div class="flex items-center justify-center gap-8 py-3">
+                <button type="button" id="side-project-tab-pdf" onclick="switchSideProjectTab('pdf')" class="text-sm text-muted hover:text-gray-900"></button>
+                <button type="button" id="side-project-tab-video" onclick="switchSideProjectTab('video')" class="text-sm text-muted hover:text-gray-900"></button>
+            </div>
+            <div class="flex-1 p-6 min-h-0">
+                <div class="relative w-full h-full bg-gray-100 rounded-xl overflow-hidden">
+                    <iframe id="side-project-frame" src="" class="w-full h-full" allow="autoplay" allowfullscreen></iframe>
+                    <div id="side-project-pageviewer" class="hidden absolute inset-0 overflow-y-auto bg-black" style="overscroll-behavior: contain;">
+                        <div id="side-project-pages" class="flex flex-col items-center gap-2 py-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const sideProjects = [
+            { title: "Lipstick Picker Robot", pdf: "https://drive.google.com/file/d/1cxo4AGjAYII3YPR597MxFDrVlCVEJJqD/preview", video: "https://drive.google.com/file/d/13-iGSsRan0cWnJe9Uago91DjrcTBazbq/preview" },
+            { title: "Restaurant Delivery Robot", pdf: "https://drive.google.com/file/d/1hnQNOZ-CemYiCWFKgCG-rJ2EWexgA-og/preview", video: "https://drive.google.com/file/d/1fW_shsnGkGQhfkLqLvxQwJ5TS2_DbogM/preview" },
+            { title: "Jera", pdf: "https://drive.google.com/file/d/12v5AfDAd53hmjIjbwPsBIBviFMouQBxq/preview", video: "https://drive.google.com/file/d/1QeQXfDfJDZl3LkZ1gVmBOOqG0Jg_jc0G/preview" },
+            { title: "Personal Portfolio", pdfPages: Array.from({length: 16}, (_, i) => `assets/side-projects/portfolio-pdf/page-${String(i + 1).padStart(2, '0')}.jpg`), video: null }
+        ];
+        let currentSideProject = null;
+
+        function openSideProject(index) {
+            currentSideProject = index;
+            const p = sideProjects[index];
+            document.getElementById('side-project-title').textContent = p.title;
+
+            const pdfTab = document.getElementById('side-project-tab-pdf');
+            const videoTab = document.getElementById('side-project-tab-video');
+            pdfTab.textContent = 'PDF';
+            videoTab.textContent = 'Video';
+            videoTab.classList.toggle('hidden', !p.video);
+
+            switchSideProjectTab('pdf');
+            document.getElementById('side-project-modal').classList.remove('hidden');
+            document.getElementById('side-project-modal').classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function switchSideProjectTab(tab) {
+            if (currentSideProject === null) return;
+            const p = sideProjects[currentSideProject];
+            const pdfTab = document.getElementById('side-project-tab-pdf');
+            const videoTab = document.getElementById('side-project-tab-video');
+            const frame = document.getElementById('side-project-frame');
+            const pageViewer = document.getElementById('side-project-pageviewer');
+
+            const activeClasses = ['text-blue-600', 'font-bold'];
+            const inactiveClasses = ['text-muted'];
+            pdfTab.classList.remove(...activeClasses);
+            pdfTab.classList.add(...inactiveClasses);
+            videoTab.classList.remove(...activeClasses);
+            videoTab.classList.add(...inactiveClasses);
+
+            if (tab === 'pdf') {
+                pdfTab.classList.remove(...inactiveClasses);
+                pdfTab.classList.add(...activeClasses);
+                if (p.pdfPages) {
+                    frame.classList.add('hidden');
+                    frame.src = '';
+                    pageViewer.classList.remove('hidden');
+                    renderPdfPages(p.pdfPages);
+                } else {
+                    pageViewer.classList.add('hidden');
+                    frame.classList.remove('hidden');
+                    frame.src = p.pdf;
+                }
+            } else {
+                pageViewer.classList.add('hidden');
+                frame.classList.remove('hidden');
+                frame.src = p.video;
+                videoTab.classList.remove(...inactiveClasses);
+                videoTab.classList.add(...activeClasses);
+            }
+        }
+
+        function renderPdfPages(pages) {
+            const container = document.getElementById('side-project-pages');
+            container.innerHTML = '';
+            pages.forEach((src, i) => {
+                const img = document.createElement('img');
+                img.src = src;
+                img.alt = `Page ${i + 1}`;
+                img.className = 'max-w-full w-full sm:w-auto';
+                container.appendChild(img);
+            });
+            document.getElementById('side-project-pageviewer').scrollTop = 0;
+        }
+
+        function closeSideProject() {
+            document.getElementById('side-project-modal').classList.add('hidden');
+            document.getElementById('side-project-modal').classList.remove('flex');
+            document.getElementById('side-project-frame').src = '';
+            document.getElementById('side-project-pageviewer').classList.add('hidden');
+            document.getElementById('side-project-frame').classList.remove('hidden');
+            document.body.style.overflow = '';
+            currentSideProject = null;
+        }
+    </script>
 
     <!-- Projects Section -->
     <section class="pt-4 pb-16" id="projects">
-        <h2 class="font-heading text-3xl lg:text-4xl font-bold mb-16">Projects</h2>
+        <h2 class="font-heading text-3xl lg:text-4xl font-bold mb-2">Projects</h2>
+        <p class="text-sm text-muted mb-16">These projects involve business-confidential information, so only a general introduction is shown here.</p>
         <div class="grid gap-4">
             <div class="flex justify-between items-center p-6 bg-white rounded-xl border border-border">
                 <div class="flex-1 min-w-0 pr-6">
