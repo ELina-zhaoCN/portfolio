@@ -188,17 +188,20 @@
                     <img src="assets/side-projects/cover-3.jpg" alt="Jera" class="w-full h-full object-cover">
                 </div>
                 <div class="px-5 py-4">
-                    <h3 class="font-heading text-base font-semibold text-gray-900">Jera</h3>
+                    <div class="flex items-center gap-2">
+                        <h3 class="font-heading text-base font-semibold text-gray-900">Jera</h3>
+                        <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-50 text-amber-600 border border-amber-200">Hackathon</span>
+                    </div>
                     <p class="text-xs text-muted leading-relaxed mt-1">An AI companion for teens — always-on emotional support, a familiar voice, and a safety net for parents and clinicians.</p>
                 </div>
             </button>
 
             <button type="button" onclick="openSideProject(3)" class="text-left bg-white rounded-2xl border border-border overflow-hidden hover:shadow-lg hover:-translate-y-0.5 transition-all">
                 <div class="aspect-video bg-gray-100">
-                    <img src="assets/side-projects/cover-4.png" alt="Personal Portfolio" class="w-full h-full object-cover">
+                    <img src="assets/side-projects/cover-4.png" alt="Product Case Studies" class="w-full h-full object-cover">
                 </div>
                 <div class="px-5 py-4">
-                    <h3 class="font-heading text-base font-semibold text-gray-900">Personal Portfolio</h3>
+                    <h3 class="font-heading text-base font-semibold text-gray-900">Product Case Studies</h3>
                     <p class="text-xs text-muted leading-relaxed mt-1">River sewage management, a social fitness app, clothing upcycling, and secondhand beauty devices.</p>
                 </div>
             </button>
@@ -231,7 +234,7 @@
             { title: "Lipstick Picker Robot", pdf: "https://drive.google.com/file/d/1cxo4AGjAYII3YPR597MxFDrVlCVEJJqD/preview", video: "https://drive.google.com/file/d/13-iGSsRan0cWnJe9Uago91DjrcTBazbq/preview" },
             { title: "Restaurant Delivery Robot", pdf: "https://drive.google.com/file/d/1hnQNOZ-CemYiCWFKgCG-rJ2EWexgA-og/preview", video: "https://drive.google.com/file/d/1fW_shsnGkGQhfkLqLvxQwJ5TS2_DbogM/preview" },
             { title: "Jera", pdf: "https://drive.google.com/file/d/12v5AfDAd53hmjIjbwPsBIBviFMouQBxq/preview", video: "https://drive.google.com/file/d/1QeQXfDfJDZl3LkZ1gVmBOOqG0Jg_jc0G/preview" },
-            { title: "Personal Portfolio", pdfPages: Array.from({length: 16}, (_, i) => `assets/side-projects/portfolio-pdf/page-${String(i + 1).padStart(2, '0')}.jpg`), video: null }
+            { title: "Product Case Studies", pdfPages: Array.from({length: 16}, (_, i) => `assets/side-projects/portfolio-pdf/page-${String(i + 1).padStart(2, '0')}.jpg`), video: null }
         ];
         let currentSideProject = null;
 
